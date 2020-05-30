@@ -1,0 +1,22 @@
+{
+  "name": "@fkm/semantic-release-config",
+  "description": "semantic-release configuration for personal projects.",
+  "version": "1.2.0",
+  "repository": "fkm/semantic-release-config",
+  "bugs": "https://github.com/fkm/semantic-release-config/issues",
+  "license": "MIT",
+  "author": "Florian Mäder <florian@maederbiel.ch>",
+  "main": "release.config.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "release": "curl https://api.github.com/repos/fkm/semantic-release-config/dispatches -H \"Authorization: token ${GITHUB_TOKEN}\" -d '{ \"event_type\": \"semantic-release\" }'"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.7",
+    "semantic-release": "^17.0.8"
+  }
+}
