@@ -1,7 +1,7 @@
 {
   "name": "@fkm/semantic-release-config",
   "description": "semantic-release configuration for personal projects.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "fkm/semantic-release-config",
   "bugs": "https://github.com/fkm/semantic-release-config/issues",
   "license": "MIT",
